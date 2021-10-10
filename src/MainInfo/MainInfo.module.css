@@ -1,0 +1,31 @@
+.mainInfo {
+  margin-top: 200px;
+  font-family: "Spartan";
+}
+
+.myName {
+  margin-bottom: 35px;
+  font-size: 62px;
+  letter-spacing: 4px;
+}
+
+.myJob {
+  margin-bottom: 35px;
+  font-size: 18px;
+  letter-spacing: 4px;
+}
+
+.aboutMeBtn {
+  padding: 10px 15px;
+  font-family: "Spartan";
+  color: #ffffff;
+  letter-spacing: 4px;
+  border: none;
+  background: #e24728;
+  /* background: linear-gradient(270deg, #f06449, #ef3636); */
+  transition: 0.3s;
+}
+
+.aboutMeBtn:hover {
+  background: #d81010;
+}
