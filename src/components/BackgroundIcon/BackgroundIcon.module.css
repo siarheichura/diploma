@@ -1,0 +1,133 @@
+.backgroundIcon {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+}
+
+.airplane {
+  top: 20%;
+  left: 10%;
+  background: url(../../assets/images/backgroundIcons/airplane.svg) no-repeat
+    center center;
+  background-size: cover;
+}
+
+.alien {
+  top: 80%;
+  left: 10%;
+  background: url(../../assets/images/backgroundIcons/alien.svg) no-repeat
+    center center;
+  background-size: cover;
+}
+
+.ball {
+  top: 50%;
+  left: 60%;
+  background: url(../../assets/images/backgroundIcons/ball.svg) no-repeat center
+    center;
+  background-size: cover;
+}
+
+.bug {
+  top: 40%;
+  left: 80%;
+  background: url(../../assets/images/backgroundIcons/bug.svg) no-repeat center
+    center;
+  background-size: cover;
+}
+
+.cat {
+  top: 90%;
+  left: 95%;
+  background: url(../../assets/images/backgroundIcons/cat.svg) no-repeat center
+    center;
+  background-size: cover;
+}
+
+.dog {
+  top: 7%;
+  left: 50%;
+  background: url(../../assets/images/backgroundIcons/dog.svg) no-repeat center
+    center;
+  background-size: cover;
+}
+
+.fish {
+  top: 85%;
+  left: 54%;
+  background: url(../../assets/images/backgroundIcons/fish.svg) no-repeat center
+    center;
+  background-size: cover;
+}
+
+.man {
+  top: 42%;
+  left: 42%;
+  background: url(../../assets/images/backgroundIcons/man.svg) no-repeat center
+    center;
+  background-size: cover;
+}
+
+.skull {
+  top: 33%;
+  left: 29%;
+  background: url(../../assets/images/backgroundIcons/skull.svg) no-repeat
+    center center;
+  background-size: cover;
+}
+
+.sun {
+  top: 86%;
+  left: 26%;
+  background: url(../../assets/images/backgroundIcons/sun.svg) no-repeat center
+    center;
+  background-size: cover;
+}
+
+.glass {
+  top: 9%;
+  right: 10%;
+  background: url(../../assets/images/backgroundIcons/glass.svg) no-repeat
+    center center;
+  background-size: cover;
+}
+
+.heart {
+  top: 48%;
+  right: 0;
+  background: url(../../assets/images/backgroundIcons/heart.svg) no-repeat
+    center center;
+  background-size: cover;
+}
+
+.light {
+  bottom: 0;
+  right: 24%;
+  background: url(../../assets/images/backgroundIcons/light.svg) no-repeat
+    center center;
+  background-size: cover;
+}
+
+.umbrella {
+  top: 57%;
+  left: 0;
+  background: url(../../assets/images/backgroundIcons/umbrella.svg) no-repeat
+    center center;
+  background-size: cover;
+}
+
+.ship {
+  top: 0;
+  left: 27%;
+  background: url(../../assets/images/backgroundIcons/ship.svg) no-repeat center
+    center;
+  background-size: cover;
+}
+
+.anchor {
+  top: 19%;
+  right: 30%;
+  background: url(../../assets/images/backgroundIcons/anchor.svg) no-repeat
+    center center;
+  background-size: cover;
+}

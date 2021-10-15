@@ -59,9 +59,9 @@ export function SocMedia() {
         <span>e</span>
         <div className={styles.socMediaArrow}></div>
       </div>
-      <a href="#">{linkedIn}</a>
-      <a href="#">{gitHub}</a>
-      <a href="#">{telegram}</a>
+      <a href="h">{linkedIn}</a>
+      <a href="h">{gitHub}</a>
+      <a href="f">{telegram}</a>
     </div>
   );
 }

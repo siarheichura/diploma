@@ -1,10 +1,10 @@
 import "./App.css";
 import { useState } from "react";
 
-import { NavBar } from "./NavBar";
-import { BackgroundIcon } from "./BackgroundIcon";
-import { MainInfo } from "./MainInfo";
-import { SocMedia } from "./SocMedia";
+import { BackgroundIcon } from "./components/BackgroundIcon";
+import { SocMedia } from "./components/SocMedia";
+
+import { RootRouter } from "./router/RootRouter";
 
 function App() {
   const [x, setX] = useState(0);
@@ -15,18 +15,12 @@ function App() {
     const y = (window.innerHeight - event.pageY * 3) / 50;
     setX(x);
     setY(y);
-    // setTransform(`translateX(${x}px) translateY(${y}px)`);
   };
 
   return (
-    <div
-      className="App"
-      onMouseMove={(event) => handleListener(event)}
-      // style={{ transform }}
-    >
-      <NavBar />
+    <div className="App" onMouseMove={(event) => handleListener(event)}>
+      <RootRouter />
       <BackgroundIcon x={x} y={y} />
-      <MainInfo />
       <SocMedia />
     </div>
   );
