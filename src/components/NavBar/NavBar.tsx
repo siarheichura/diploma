@@ -3,7 +3,8 @@ import styles from "./NavBar.module.css";
 export function NavBar() {
   return (
     <nav className={`${styles.nav} content`}>
-      <a href="#" className={styles.navLogo}>
+      nav
+      {/* <a href="#" className={styles.navLogo}>
         <p>.Seriy</p>
         <p>Volk</p>
       </a>
@@ -28,7 +29,7 @@ export function NavBar() {
             My StickerShop
           </a>
         </li>
-      </ul>
+      </ul> */}
     </nav>
   );
 }
