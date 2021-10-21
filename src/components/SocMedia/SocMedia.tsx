@@ -42,8 +42,15 @@ const socialMediaSVG = {
   ),
 };
 
+const mySocialMediaUrl = {
+  linkedInUrl: 'https://www.linkedin.com/in/sergei-chura-3a4708215/',
+  gitHubUrl: 'https://github.com/siarheichura',
+  telegramUrl: 'https://t.me/serik_volk'
+}
+
 export function SocMedia() {
   const { linkedIn, gitHub, telegram } = socialMediaSVG;
+  const { linkedInUrl, gitHubUrl, telegramUrl } = mySocialMediaUrl
 
   return (
     <div className={styles.socMedia}>
@@ -59,9 +66,9 @@ export function SocMedia() {
         <span>e</span>
         <div className={styles.socMediaArrow}></div>
       </div>
-      <a href="h">{linkedIn}</a>
-      <a href="h">{gitHub}</a>
-      <a href="f">{telegram}</a>
+      <a href={linkedInUrl} target='_blank' rel='noopener noreferrer'>{linkedIn}</a>
+      <a href={gitHubUrl} target='_blank' rel='noopener noreferrer'>{gitHub}</a>
+      <a href={telegramUrl} target='_blank' rel='noopener noreferrer'>{telegram}</a>
     </div>
   );
 }

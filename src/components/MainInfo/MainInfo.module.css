@@ -1,6 +1,10 @@
 .mainInfo {
-  margin-top: 200px;
+  height: 90vh;
   font-family: "Spartan";
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
 }
 
 .myName {

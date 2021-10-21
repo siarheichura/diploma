@@ -1,3 +1,33 @@
 .aboutMe {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  font-family: "Spartan";
+}
+
+.title {
+  position: relative;
+  margin-bottom: 20px;
   font-size: 36px;
+}
+
+.bigText {
+  position: absolute;
+  top: -80px;
+  left: 80px;
+  width: 570px;
+  font-size: 100px;
+  opacity: 0.03;
+}
+
+.text {
+  width: 80%;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+.text span {
+  color: #ef7b65;
 }
