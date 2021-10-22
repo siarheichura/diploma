@@ -1,3 +1,28 @@
 .stickerShop {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  font-family: "Spartan";
   font-size: 36px;
+}
+
+.shopContainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  /* gap: 10px; */
+}
+
+.shopItem {
+  width: 49%;
+  height: 200px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: chartreuse;
 }

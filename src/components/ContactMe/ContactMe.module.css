@@ -4,12 +4,13 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
+  gap: 15px;
   font-family: "Spartan";
 }
 
 .title {
   position: relative;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
   font-size: 36px;
 }
 
@@ -20,4 +21,42 @@
   width: 670px;
   font-size: 100px;
   opacity: 0.03;
+}
+
+.text {
+  font-family: serif;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+}
+
+input,
+textarea {
+  width: 400px;
+  padding: 5px;
+  background: none;
+  border: none;
+  border-bottom: 2px solid #ebebeb;
+  color: #ebebeb;
+}
+
+textarea {
+  height: 100px;
+}
+
+button {
+  padding: 10px 15px;
+  font-family: "Spartan";
+  color: #ffffff;
+  letter-spacing: 4px;
+  border: none;
+  background: #e24728;
+  /* background: linear-gradient(270deg, #f06449, #ef3636); */
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #d81010;
 }
