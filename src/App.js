@@ -6,6 +6,8 @@ import { SocMedia } from "./components/SocMedia";
 
 import { RootRouter } from "./router/RootRouter";
 
+import { StickerShopModal } from "./components/StickerShopModal";
+
 function App() {
   const [x, setX] = useState(0);
   const [y, setY] = useState(0);
@@ -19,9 +21,10 @@ function App() {
 
   return (
     <div className="App" onMouseMove={(event) => handleListener(event)}>
-      <RootRouter />
       <BackgroundIcon x={x} y={y} />
       <SocMedia />
+      <RootRouter />
+      <StickerShopModal />
     </div>
   );
 }

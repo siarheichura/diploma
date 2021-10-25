@@ -1,4 +1,6 @@
 .stickerShop {
+  position: relative;
+  z-index: 10;
   height: 90vh;
   display: flex;
   flex-direction: column;
@@ -17,11 +19,18 @@
   /* gap: 10px; */
 }
 
-.shopItem {
+.itemWrap {
+  overflow: hidden;
   width: 49%;
   height: 210px;
   margin-bottom: 20px;
-  padding: 15px;
+}
+
+.shopItem {
+  width: 100%;
+  height: 100%;
+
+  padding: 25px;
   /* display: flex;
   align-items: center;
   justify-content: center; */

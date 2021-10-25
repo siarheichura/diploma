@@ -1,4 +1,6 @@
 .aboutMe {
+  position: relative;
+  z-index: 10;
   height: 90vh;
   display: flex;
   flex-direction: column;

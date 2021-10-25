@@ -1,4 +1,6 @@
 .mainInfo {
+  position: relative;
+  z-index: 10;
   height: 90vh;
   font-family: "Spartan";
   display: flex;
