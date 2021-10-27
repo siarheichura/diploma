@@ -25,6 +25,7 @@ export function ContactMe() {
 
   const onInputNameChange = (event: any) => {
     setInputNameValue(event.target.value);
+    console.log(inputNameValue)
   };
   const onInputEmailChange = (event: any) => {
     setInputEmailValue(event.target.value);
