@@ -6,7 +6,7 @@ import { SocMedia } from "./components/SocMedia";
 
 import { RootRouter } from "./router/RootRouter";
 
-import { StickerShopModal } from "./components/StickerShopModal";
+// import { StickerShopModal } from "./components/StickerShopModal";
 
 function App() {
   const [x, setX] = useState(0);
@@ -24,7 +24,7 @@ function App() {
       <BackgroundIcon x={x} y={y} />
       <SocMedia />
       <RootRouter />
-      <StickerShopModal />
+      {/* <StickerShopModal /> */}
     </div>
   );
 }

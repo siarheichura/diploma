@@ -11,6 +11,21 @@
   font-size: 36px;
 }
 
+.shopHeading {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.bascket {
+  width: 30px;
+  height: 30px;
+  background: url(../../assets/images/icons/bascket.svg) no-repeat center center;
+  background-size: contain;
+}
+
 .shopContainer {
   width: 100%;
   display: flex;

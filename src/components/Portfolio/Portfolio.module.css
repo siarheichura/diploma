@@ -1,5 +1,58 @@
 .portfolio {
   position: relative;
   z-index: 10;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  font-family: "Spartan";
+}
+
+.portfolio h3 {
   font-size: 36px;
+}
+
+.slider {
+  width: 70%;
+}
+
+.slide {
+  height: 350px;
+  padding: 20px;
+  display: flex !important;
+  flex-direction: column;
+  justify-content: space-between;
+
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../../assets/images/portfolioSlides/opensto.jpg) no-repeat center center;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.slide:hover .slideInfo {
+  transform: translateY(0);
+}
+
+.slide a {
+  font-size: 28px;
+  color: #aeb0c1;
+  transition: 0.3s;
+}
+
+.slide a:hover {
+  color: #fff;
+}
+
+.slideInfo {
+  transform: translateY(100px);
+  transition: 0.3s;
+}
+
+.slideTech {
+  font-size: 20px;
+  margin-bottom: 7px;
+  font-family: monospace;
+  font-size: 16px;
 }
