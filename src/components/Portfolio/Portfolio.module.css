@@ -6,7 +6,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 15px;
   font-family: "Spartan";
 }
 
@@ -15,19 +14,22 @@
 }
 
 .slider {
-  width: 70%;
+  z-index: 10;
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
 }
 
 .slide {
-  height: 350px;
+  height: 420px;
   padding: 20px;
   display: flex !important;
   flex-direction: column;
   justify-content: space-between;
 
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url(../../assets/images/portfolioSlides/opensto.jpg) no-repeat center center;
-  background-size: cover;
+  /* background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../../assets/images/portfolioSlides/opensto.jpg) no-repeat center center; */
+  /* background-size: cover; */
   overflow: hidden;
 }
 
@@ -46,6 +48,8 @@
 }
 
 .slideInfo {
+  font-family: monospace;
+  font-size: 16px;
   transform: translateY(100px);
   transition: 0.3s;
 }
@@ -53,6 +57,4 @@
 .slideTech {
   font-size: 20px;
   margin-bottom: 7px;
-  font-family: monospace;
-  font-size: 16px;
 }

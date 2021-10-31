@@ -1,13 +1,9 @@
 .App {
-  /* display: flex;
-  flex-direction: column; */
   height: 100vh;
+}
+
+.contentWrapper {
   width: 75%;
   max-width: 1200px;
   margin: 0 auto;
 }
-
-/* .App div {
-  display: grid;
-  grid-template-rows: repeat(2, 1fr);
-} */

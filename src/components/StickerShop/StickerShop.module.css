@@ -16,14 +16,32 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  cursor: pointer;
 }
 
 .bascket {
+  position: relative;
   width: 30px;
   height: 30px;
   background: url(../../assets/images/icons/bascket.svg) no-repeat center center;
   background-size: contain;
+  cursor: pointer;
+}
+
+.basketCount {
+  position: absolute;
+  top: -4px;
+  left: -9px;
+  width: 17px;
+  height: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: monospace;
+  font-size: 12px;
+  font-weight: 600;
+  color: #1c1d25;
+  background-color: #a6e031;
+  border-radius: 50%;
 }
 
 .shopContainer {

@@ -1,5 +1,5 @@
 .nav {
-  height: 8vh;
+  padding: 10px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -17,6 +17,7 @@
 
 .navList {
   display: flex;
+  align-items: center;
   font-family: "Spartan", sans-serif;
   gap: 20px;
 }
@@ -34,6 +35,19 @@
 
 .navLink:hover {
   color: #ffffff;
+}
+
+.activeNavLink {
+  color: #ffffff;
+}
+
+.themeSwitcher {
+  width: 25px;
+  height: 25px;
+  background: url(../assets/images/icons/themeSwitcher.svg) no-repeat center
+    center;
+  background-size: contain;
+  cursor: pointer;
 }
 
 @keyframes stickersLink {

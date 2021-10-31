@@ -1,0 +1,1 @@
+export { SocMediaLinks } from "./SocMediaLinks";

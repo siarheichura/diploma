@@ -1,1 +1,0 @@
-export { SocMedia } from "./SocMedia";

@@ -1,0 +1,15 @@
+.result {
+  width: 100%;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+  font-size: 40px;
+  background: #fff;
+}
+
+.resultLogo {
+  margin-right: 10px;
+  width: 50px;
+}
