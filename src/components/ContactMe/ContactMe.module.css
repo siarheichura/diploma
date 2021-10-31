@@ -1,61 +1,75 @@
 .contactMe {
+  width: 50%;
+  height: 100%;
+  padding: 55px;
   position: relative;
   z-index: 10;
-  height: 90vh;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  gap: 15px;
-  font-family: "Spartan";
+  align-items: flex-end;
+  justify-content: space-between;
+  background-color: #1c1d25;
 }
 
 .title {
+  width: 100%;
   position: relative;
-  /* margin-bottom: 20px; */
+  font-family: "Spartan";
   font-size: 36px;
+  text-align: left;
 }
 
 .bigText {
   position: absolute;
-  top: -80px;
-  left: 80px;
+  top: 355px;
+  left: 100px;
   width: 670px;
   font-size: 100px;
   opacity: 0.03;
 }
 
 .text {
-  font-family: serif;
+  line-height: 1.2;
+  text-align: justify;
+  font-family: monospace;
+  font-size: 16px;
+  color: #ee8d65;
 }
 
-label {
+.contactMe label {
+  width: 100%;
   display: flex;
   flex-direction: column;
+  font-family: monospace;
+  font-size: 16px;
+  letter-spacing: 2px;
 }
 
-input,
-textarea {
-  width: 400px;
+.contactMe input,
+.contactMe textarea {
+  width: 100%;
   padding: 5px;
   background: none;
   border: none;
   border-bottom: 2px solid #ebebeb;
+  font-family: monospace;
+  font-size: 14px;
   color: #ebebeb;
 }
 
 textarea {
-  height: 100px;
+  height: 80px;
 }
 
-button {
+.contactMe button {
   padding: 10px 15px;
-  font-family: "Spartan";
-  color: #ffffff;
-  letter-spacing: 4px;
+  font-family: monospace;
+  font-size: 16px;
+  font-weight: 600;
+  color: #ebebeb;
+  letter-spacing: 2px;
   border: none;
   background: #e24728;
-  /* background: linear-gradient(270deg, #f06449, #ef3636); */
   transition: 0.3s;
 }
 

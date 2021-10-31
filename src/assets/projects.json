@@ -1,12 +1,37 @@
 [
-    {
-        "name": "Opensto",
-        "technologies": "JS",
-        "description": "lalala"
-    },
-    {
-        "name": "Kanban Board",
-        "technologies": "JS",
-        "description": "lalala"
-    }
+  {
+    "name": "opensto.by",
+    "img": "/mockImages/opensto.jpg",
+    "link": "https://github.com/siarheichura/opensto.by",
+    "technologies": ["HTML5", "CSS3", "JavaScript"],
+    "description": "This landing page is made for Opensto company to attract customers. Вata from the form is sent to the telegram chat using created telegram bot"
+  },
+  {
+    "name": "Todo List",
+    "img": "/mockImages/todo-react.png",
+    "link": "https://github.com/siarheichura/ToDoList-react",
+    "technologies": ["CSS3", "JS", "ReactJS", "TypeScript"],
+    "description": ""
+  },
+  {
+    "name": "Weather app",
+    "img": "/mockImages/todo-react.jpg",
+    "link": "https://github.com/siarheichura/WeatherApp",
+    "technologies": ["HTML5", "CSS3", "JavaScript"],
+    "description": ""
+  },
+  {
+    "name": "Kanban board",
+    "img": "/mockImages/kanbanBoard.png",
+    "link": "https://github.com/siarheichura/KanbanBoard/tree/dev",
+    "technologies": ["HTML5", "CSS3", "JavaScript"],
+    "description": ""
+  },
+  {
+    "name": "Dashboard",
+    "img": "/mockImages/dashboard.png",
+    "link": "https://github.com/siarheichura/Dashboard",
+    "technologies": ["HTML5", "CSS3 (SASS)"],
+    "description": ""
+  }
 ]

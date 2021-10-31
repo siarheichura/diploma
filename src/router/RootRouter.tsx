@@ -1,12 +1,12 @@
-import { BrowserRouter, Link, Switch, Route } from "react-router-dom";
+import { BrowserRouter, Link, Switch, Route, NavLink } from "react-router-dom";
 
 import styles from "./RootRouter.module.css";
 
-import { MainInfo } from "../components/MainInfo";
-import { AboutMe } from "../components/AboutMe";
+import { MainPage } from "../components/MainPage";
 import { Portfolio } from "../components/Portfolio";
-import { ContactMe } from "../components/ContactMe";
 import { StickerShop } from "../components/StickerShop";
+import { MyInfoModal } from "../components/MyInfoModal";
+import { Bascket } from "../components/Bascket";
 
 export function RootRouter() {
   return (
@@ -18,39 +18,46 @@ export function RootRouter() {
             <p>Volk</p>
           </Link>
           <nav className={styles.navList}>
-            <Link className={styles.navLink} to="/about-me">
-              About Me
-            </Link>
-            <Link className={styles.navLink} to="/portfolio">
+            <NavLink
+              className={styles.navLink}
+              activeClassName={styles.activeNavLink}
+              to="/portfolio"
+            >
               Portfolio
-            </Link>
-            <Link className={styles.navLink} to="/contact-me">
+            </NavLink>
+            <NavLink
+              className={styles.navLink}
+              activeClassName={styles.activeNavLink}
+              to="/my-info"
+            >
               Contact Me
-            </Link>
-            <Link
+            </NavLink>
+            <NavLink
               className={`${styles.navLink} ${styles.stickers}`}
+              activeClassName={styles.activeNavLink}
               to="/sticker-shop"
             >
               My Sticker Shop
-            </Link>
+            </NavLink>
+            <div className={styles.themeSwitcher}></div>
           </nav>
         </div>
 
         <Switch>
           <Route exact path="/">
-            <MainInfo />
-          </Route>
-          <Route exact path="/about-me">
-            <AboutMe />
+            <MainPage />
           </Route>
           <Route exact path="/portfolio">
             <Portfolio />
           </Route>
-          <Route exact path="/contact-me">
-            <ContactMe />
+          <Route exact path="/my-info">
+            <MyInfoModal />
           </Route>
           <Route exact path="/sticker-shop">
             <StickerShop />
+          </Route>
+          <Route exact path="/sticker-shop/bascket">
+            <Bascket />
           </Route>
         </Switch>
       </div>

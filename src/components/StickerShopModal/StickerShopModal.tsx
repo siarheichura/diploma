@@ -1,5 +1,8 @@
 import { useState } from "react";
+
 import styles from "./StickerShopModal.module.css";
+
+import { InstaResult } from "../InstaResult";
 
 import logo1 from "../../assets/images/instaLogos/insta1.png";
 import logo2 from "../../assets/images/instaLogos/insta2.png";
@@ -13,14 +16,27 @@ const instaLogos = [
 
 interface IProps {
   toggleModal: () => void;
+  addToBasket: (
+    iconId: number,
+    nickname: string,
+    width: string,
+    height: string,
+    comment: string
+  ) => void;
 }
 
-export function StickerShopModal({ toggleModal }: IProps) {
+export function StickerShopModal({ toggleModal, addToBasket }: IProps) {
+  const [isSelectVisible, setIsSelectVisible] = useState(false);
   const [instaNick, setInstaNick] = useState("");
   const [instaLogo, setInstaLogo] = useState(instaLogos[0].logo);
-  const [isSelectVisible, setIsSelectVisible] = useState(false);
+  const [stickerWidth, setStickerWidth] = useState("");
+  const [stickerHeight, setStickerHeight] = useState("");
+  const [stickerComment, setStickerComment] = useState("");
 
-  // let isVisible: boolean = false;
+  const onBtnAddClick = () => {
+    toggleModal();
+    addToBasket(1, "lol", "kek", "che", "bu");
+  };
 
   const onInstaNickChange = (event: any) => {
     setInstaNick(event.target.value);
@@ -32,18 +48,13 @@ export function StickerShopModal({ toggleModal }: IProps) {
 
   const selectInstaLogo = (event: any, logo: any) => {
     setInstaLogo(logo.logo);
-    console.log(logo);
-    console.log(event.target);
   };
 
   return (
-    <div className={styles.modal}>
+    <div className={styles.instaModal}>
       <div className={styles.closeBtn} onClick={toggleModal}></div>
       <h3 className={styles.title}>Sticker with your instanick.</h3>
-      <div className={styles.result}>
-        <img className={styles.resultLogo} src={instaLogo} alt="instaLogo" />
-        <p className={styles.resultNick}>{instaNick}</p>
-      </div>
+      <InstaResult instaLogo={instaLogo} instaNick={instaNick} />
       <div className={styles.instaInfo}>
         <div className={styles.instaNick}>
           <label>your instagram nickname</label>
@@ -60,10 +71,12 @@ export function StickerShopModal({ toggleModal }: IProps) {
       </div>
 
       <div className={styles.instaDropdown}>
-        <label className={styles.dropLabel}>choose icon</label>
-        <div className={styles.iconDrop}>
-          <img src={instaLogo} alt="instaLogo" />
-          <div onClick={showSelect}></div>
+        <div className={styles.dropHead}>
+          <label className={styles.dropLabel}>icon</label>
+          <div className={styles.iconDrop}>
+            <img src={instaLogo} alt="instaLogo" />
+            <div onClick={showSelect}></div>
+          </div>
         </div>
 
         {isSelectVisible ? (
@@ -81,11 +94,12 @@ export function StickerShopModal({ toggleModal }: IProps) {
           </div>
         ) : null}
       </div>
+
       <div className={styles.instaComment}>
         <label>submit your wishes</label>
         <input type="text" />
       </div>
-      <button onClick={toggleModal}>Add to Basket</button>
+      <button onClick={onBtnAddClick}>Add to Basket</button>
     </div>
   );
 }

@@ -1,0 +1,1 @@
+export { InstaResult } from "./InstaResult";

@@ -1,6 +1,11 @@
-import styles from "./BackgroundIcon.module.css";
+import styles from "./BackgroundIcons.module.css";
 
-export function BackgroundIcon({ x, y }: any) {
+export interface IProps {
+  x: number;
+  y: number;
+}
+
+export function BackgroundIcons({ x, y }: IProps) {
   return (
     <div>
       <div
