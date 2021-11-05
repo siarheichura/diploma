@@ -1,0 +1,1 @@
+export { StickerInstaModal } from "./StickerInstaModal";

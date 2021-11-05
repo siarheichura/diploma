@@ -1,0 +1,15 @@
+.btn {
+  padding: 7px 15px;
+  color: #ebebeb;
+  border: none;
+  background: #e24728;
+  font-family: monospace;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #d81010;
+}

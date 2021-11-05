@@ -11,27 +11,27 @@
     "img": "/mockImages/todo-react.png",
     "link": "https://github.com/siarheichura/ToDoList-react",
     "technologies": ["CSS3", "JS", "ReactJS", "TypeScript"],
-    "description": ""
+    "description": "This application will allow you not to forget about important things and competently create your daily routine"
   },
   {
     "name": "Weather app",
-    "img": "/mockImages/todo-react.jpg",
+    "img": "/mockImages/weather.png",
     "link": "https://github.com/siarheichura/WeatherApp",
     "technologies": ["HTML5", "CSS3", "JavaScript"],
-    "description": ""
+    "description": "Here you can find out the current weather in your location and in every city you want. This app is using REST API from Openweathermap."
   },
   {
     "name": "Kanban board",
     "img": "/mockImages/kanbanBoard.png",
     "link": "https://github.com/siarheichura/KanbanBoard/tree/dev",
     "technologies": ["HTML5", "CSS3", "JavaScript"],
-    "description": ""
+    "description": "This is my course work for basic JavaScript course in TeachMeSkills"
   },
   {
     "name": "Dashboard",
     "img": "/mockImages/dashboard.png",
     "link": "https://github.com/siarheichura/Dashboard",
     "technologies": ["HTML5", "CSS3 (SASS)"],
-    "description": ""
+    "description": "This is my course work for HTML&CSS course in TeachMeSkills"
   }
 ]

@@ -1,57 +1,49 @@
 import { useState } from "react";
 import { useHistory } from "react-router";
 
-import styles from "./StickerShop.module.css";
+import styles from "./StickerShopPage.module.css";
 
-import { StickerShopModal } from "../StickerShopModal";
+import { StickerInstaModal } from "../StickerInstaModal";
+import { RootStateOrAny, useDispatch, useSelector } from "react-redux";
+import { ACTIONS } from "../../redux/contants";
 
-export interface IProduct {
+export interface ISticker {
   id: string;
-  icon: number;
+  icon: string;
   nickname: string;
   width: string;
   height: string;
   comment: string;
+  count: number;
+  price: number;
+  color: string;
 }
 
-export function StickerShop() {
-  const [isModalVisible, setModalVisible] = useState(false);
-  const [basket, setBasket]: any = useState([]);
+export const basket: ISticker[] = [];
 
+export function StickerShopPage() {
   const history = useHistory();
+  const dispatch = useDispatch();
+  const basket = useSelector((state: RootStateOrAny) => state.basket.basket);
+  const [isModalVisible, setModalVisible] = useState(false);
 
-  const addToBasket = (
-    iconId: number,
-    nickname: string,
-    width: string,
-    height: string,
-    comment: string
-  ) => {
-    const newProduct: IProduct = {
-      id: Math.random().toString(36).substr(2, 9),
-      icon: iconId,
-      nickname: nickname,
-      width: width,
-      height: height,
-      comment: comment,
-    };
-    setBasket([...basket, newProduct]);
-    console.log(basket);
+  const addStickerToBasket = (newSticker: any) => {
+    dispatch({ type: ACTIONS.ADD_STICKER, newSticker });
   };
 
   const toggleModal = () => {
     setModalVisible(!isModalVisible);
   };
 
-  const onBtnClick = () => {
+  const onBasketButtonClick = () => {
     history.push("/sticker-shop/bascket");
   };
 
   return (
     <div className={styles.stickerShop}>
       <div className={styles.shopHeading}>
-        <div>Buy my Sticker on your car.</div>
-        <div className={styles.bascket} onClick={onBtnClick}>
+        <div>Buy Stickers on your car.</div>
+        <div className={styles.bascket} onClick={onBasketButtonClick}>
           <div className={styles.basketCount}>{basket.length}</div>
         </div>
       </div>
@@ -71,11 +63,16 @@ export function StickerShop() {
           </div>
         </div>
         <div className={styles.itemWrap}>
-          <div className={styles.shopItem}>Tvoi Variantik</div>
+          <div className={`${styles.shopItem} ${styles.users}`}>
+            Tvoi Variantik
+          </div>
         </div>
       </div>
       {isModalVisible ? (
-        <StickerShopModal toggleModal={toggleModal} addToBasket={addToBasket} />
+        <StickerInstaModal
+          toggleModal={toggleModal}
+          addStickerToBasket={addStickerToBasket}
+        />
       ) : null}
     </div>
   );

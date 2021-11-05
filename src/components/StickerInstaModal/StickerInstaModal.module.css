@@ -137,8 +137,43 @@
   width: 40px;
 }
 
+.instaColorSelect {
+  width: 200px;
+  font-size: 14px;
+  font-family: monospace;
+}
+
 .instaComment {
   width: 100%;
   display: flex;
   flex-direction: column;
+}
+
+.modalFooter {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+
+.modalPrice {
+  flex-grow: 1;
+  font-size: 20px;
+  text-align: end;
+}
+
+.modalButton {
+  padding: 10px 15px;
+  color: #ebebeb;
+  border: none;
+  background: #e24728;
+  font-family: monospace;
+  font-size: 15px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.modalButton:hover {
+  background: #d81010;
 }

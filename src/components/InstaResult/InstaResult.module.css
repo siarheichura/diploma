@@ -7,9 +7,27 @@
   color: #000;
   font-size: 40px;
   background: #fff;
+  font-family: "Spartan", sans-serif;
 }
 
 .resultLogo {
   margin-right: 10px;
   width: 50px;
+}
+
+.resultSmall {
+  width: 250px;
+  padding: 5px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+  font-size: 20px;
+  background: #fff;
+  font-family: "Spartan", sans-serif;
+}
+
+.resultLogoSmall {
+  margin-right: 5px;
+  width: 25px;
 }
