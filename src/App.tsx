@@ -5,6 +5,8 @@ import { RootRouter } from "./router/RootRouter";
 
 import { BackgroundIcons } from "./components/BackgroundIcons";
 import { SocMediaLinks } from "./components/SocMediaLinks";
+import { Provider } from "react-redux";
+import { store } from "./redux/store";
 
 function App() {
   const [x, setX] = useState(0);
@@ -18,13 +20,15 @@ function App() {
   };
 
   return (
-    <div className="App" onMouseMove={(event) => onMouseMove(event)}>
-      <div className="contentWrapper">
-        <BackgroundIcons x={x} y={y} />
-        <SocMediaLinks />
-        <RootRouter />
+    <Provider store={store}>
+      <div className="App" onMouseMove={(event) => onMouseMove(event)}>
+        <div className="contentWrapper">
+          <BackgroundIcons x={x} y={y} />
+          <SocMediaLinks />
+          <RootRouter />
+        </div>
       </div>
-    </div>
+    </Provider>
   );
 }
 

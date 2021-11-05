@@ -1,0 +1,30 @@
+.counter {
+  display: flex;
+  gap: 7px;
+  font-family: monospace;
+  font-size: 25px;
+}
+
+.counter p {
+  width: 25px;
+  text-align: center;
+}
+
+.counter button {
+  width: 25px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ebebeb;
+  border: none;
+  background: #e24728;
+  font-family: monospace;
+  font-size: 15px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.counter button:hover {
+  background: #d81010;
+}

@@ -87,12 +87,17 @@
   background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
     url(../../assets/images/stickerShop/call.jpg) no-repeat center center;
   background-size: cover;
-  cursor: pointer;
 }
 
 .window {
   background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
     url(../../assets/images/stickerShop/window.jpg) no-repeat center center;
   background-size: cover;
-  cursor: pointer;
+}
+
+.users {
+  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+    url(../../assets/images/stickerShop/usersVariant.jpg) no-repeat center
+      center;
+  background-size: cover;
 }

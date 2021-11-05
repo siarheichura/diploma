@@ -4,9 +4,9 @@ import styles from "./RootRouter.module.css";
 
 import { MainPage } from "../components/MainPage";
 import { Portfolio } from "../components/Portfolio";
-import { StickerShop } from "../components/StickerShop";
+import { StickerShopPage } from "../components/StickerShopPage";
 import { MyInfoModal } from "../components/MyInfoModal";
-import { Bascket } from "../components/Bascket";
+import { StickerBasket } from "../components/StickerBasket";
 
 export function RootRouter() {
   return (
@@ -54,10 +54,10 @@ export function RootRouter() {
             <MyInfoModal />
           </Route>
           <Route exact path="/sticker-shop">
-            <StickerShop />
+            <StickerShopPage />
           </Route>
           <Route exact path="/sticker-shop/bascket">
-            <Bascket />
+            <StickerBasket />
           </Route>
         </Switch>
       </div>

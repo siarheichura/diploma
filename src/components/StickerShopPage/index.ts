@@ -1,0 +1,1 @@
+export { StickerShopPage } from "./StickerShopPage";

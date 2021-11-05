@@ -1,1 +1,0 @@
-export { StickerResult } from "./StickerResult";

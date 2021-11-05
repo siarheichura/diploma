@@ -1,1 +1,0 @@
-export { StickerShop } from "./StickerShop";
