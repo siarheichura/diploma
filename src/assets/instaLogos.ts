@@ -13,6 +13,6 @@ export const instaLogos: ILogo[] = [
   { id: 1, logo: logo1 },
   { id: 2, logo: logo2 },
   { id: 3, logo: logo3 },
-  { id: 3, logo: logo4 },
-  { id: 3, logo: logo5 },
+  { id: 4, logo: logo4 },
+  { id: 5, logo: logo5 },
 ];

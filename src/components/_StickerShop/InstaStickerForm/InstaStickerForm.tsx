@@ -1,18 +1,17 @@
-import { ChangeEvent, MouseEvent, useEffect, useState } from "react";
-
-import styles from "./StickerInstaModal.module.css";
+import styles from "./InstaStickerForm.module.css";
 
 import { InstaResult } from "../InstaResult";
-import { ILogo, instaLogos } from "../../assets/instaLogos";
+import { ILogo, instaLogos } from "../../../assets/instaLogos";
 import { ISticker } from "../StickerShopPage/StickerShopPage";
-import { StickerCounter } from "../shared/StickerCounter";
+import { StickerCounter } from "../../shared/StickerCounter";
+import { ChangeEvent, MouseEvent, useEffect, useState } from "react";
 
 interface IProps {
-  toggleModal: () => void;
   addStickerToBasket: (newSticker: ISticker) => void;
+  toggleModal: any;
 }
 
-export function StickerInstaModal({ toggleModal, addStickerToBasket }: IProps) {
+export function InstaStickerForm({ addStickerToBasket, toggleModal }: IProps) {
   const [isSelectVisible, setIsSelectVisible] = useState(false);
   const [instaNick, setInstaNick] = useState("your_nickname");
   const [instaLogo, setInstaLogo] = useState(instaLogos[0].logo);
@@ -27,6 +26,7 @@ export function StickerInstaModal({ toggleModal, addStickerToBasket }: IProps) {
     const newSticker: ISticker = {
       id: Math.random().toString(36).substr(2, 9),
       icon: instaLogo,
+
       nickname: instaNick,
       width: stickerWidth,
       height: stickerHeight,
@@ -80,8 +80,7 @@ export function StickerInstaModal({ toggleModal, addStickerToBasket }: IProps) {
   };
 
   return (
-    <div className={styles.instaModal}>
-      <div className={styles.closeBtn} onClick={toggleModal}></div>
+    <div className={styles.instaForm}>
       <h3 className={styles.title}>Sticker with your instanick.</h3>
       <InstaResult instaLogo={instaLogo} instaNick={instaNick} size="big" />
       <div className={styles.instaInfo}>
@@ -147,28 +146,9 @@ export function StickerInstaModal({ toggleModal, addStickerToBasket }: IProps) {
             className={styles.instaColorSelect}
             onChange={(e) => {
               setColor(e.target.value);
-              console.log(e.target.value);
             }}
           >
             <option value="select color">Select color</option>
-            <option value="black">black</option>
-            <option value="white">white</option>
-            <option value="yellow">yellow</option>
-            <option value="red">red</option>
-            <option value="gold">gold</option>
-            <option value="silver">silver</option>
-          </select>
-        </div>
-        <div style={{ display: "flex", flexDirection: "column" }}>
-          <label>font</label>
-          <select
-            className={styles.instaColorSelect}
-            onChange={(e) => {
-              setColor(e.target.value);
-              console.log(e.target.value);
-            }}
-          >
-            <option value="select color">Select font</option>
             <option value="black">black</option>
             <option value="white">white</option>
             <option value="yellow">yellow</option>
@@ -190,16 +170,7 @@ export function StickerInstaModal({ toggleModal, addStickerToBasket }: IProps) {
           incrementStickerCounter={incrementStickerCounter}
           decrementStickerCounter={decrementStickerCounter}
         />
-        {/* <div className={styles.modalCounter}>
-          <button onClick={decrementCounter}>-</button>
-          <p>{counter}</p>
-          <button onClick={incrementCounter}>+</button>
-        </div> */}
-
         <div className={styles.modalPrice}>{price} BYN</div>
-        {/* <button className={styles.modalButton} onClick={onBtnAddClick}>
-          Add to Basket
-        </button> */}
         <button className={styles.modalButton} onClick={onAddButtonClick}>
           Add to Basket
         </button>

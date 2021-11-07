@@ -21,7 +21,7 @@
   right: 15px;
   width: 20px;
   height: 20px;
-  background: url(../../assets/images/icons/closeBtn.svg) no-repeat center
+  background: url(../../../assets/images/icons/closeBtn.svg) no-repeat center
     center;
   background-size: contain;
   cursor: pointer;
@@ -116,7 +116,7 @@
 .iconDrop div {
   width: 15px;
   height: 15px;
-  background: url(../../assets/images/icons/dropdown.png) no-repeat center
+  background: url(../../../assets/images/icons/dropdown.png) no-repeat center
     center;
   background-size: contain;
   cursor: pointer;

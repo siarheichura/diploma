@@ -1,0 +1,1 @@
+export { InstaStickerForm } from "./InstaStickerForm";

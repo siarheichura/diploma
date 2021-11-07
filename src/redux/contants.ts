@@ -1,3 +1,4 @@
 export const ACTIONS = {
   ADD_STICKER: "ADD_STICKER",
+  DELETE_STICKER: "DELETE_STICKER",
 };

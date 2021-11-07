@@ -22,7 +22,8 @@
   position: relative;
   width: 30px;
   height: 30px;
-  background: url(../../assets/images/icons/bascket.svg) no-repeat center center;
+  background: url(../../../assets/images/icons/bascket.svg) no-repeat center
+    center;
   background-size: contain;
   cursor: pointer;
 }
@@ -79,25 +80,25 @@
 
 .insta {
   background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
-    url(../../assets/images/stickerShop/insta.jpg) no-repeat center center;
+    url(../../../assets/images/stickerShop/insta.jpg) no-repeat center center;
   background-size: cover;
 }
 
 .call {
   background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
-    url(../../assets/images/stickerShop/call.jpg) no-repeat center center;
+    url(../../../assets/images/stickerShop/call.jpg) no-repeat center center;
   background-size: cover;
 }
 
 .window {
   background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
-    url(../../assets/images/stickerShop/window.jpg) no-repeat center center;
+    url(../../../assets/images/stickerShop/window.jpg) no-repeat center center;
   background-size: cover;
 }
 
 .users {
   background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
-    url(../../assets/images/stickerShop/usersVariant.jpg) no-repeat center
+    url(../../../assets/images/stickerShop/usersVariant.jpg) no-repeat center
       center;
   background-size: cover;
 }

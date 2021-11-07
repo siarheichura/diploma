@@ -1,0 +1,153 @@
+.instaForm {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.title {
+  font-size: 20px;
+  align-self: start;
+}
+
+.result {
+  width: 100%;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+  font-size: 40px;
+  background: #fff;
+}
+
+.resultLogo {
+  margin-right: 10px;
+  width: 50px;
+}
+
+.instaInfo {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.instaForm label {
+  margin-bottom: 3px;
+  font-family: monospace;
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+
+.instaForm input {
+  padding: 5px;
+  background: none;
+  border: none;
+  border-bottom: 2px solid #ebebeb;
+  font-family: monospace;
+  font-size: 14px;
+  color: #ebebeb;
+}
+
+.instaNick {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+}
+
+.instaWidth,
+.instaHeight {
+  width: 14%;
+  display: flex;
+  flex-direction: column;
+}
+
+.instaDropdown {
+  position: relative;
+  /* width: 80px; */
+}
+
+.dropHead {
+  display: flex;
+  flex-direction: column;
+}
+
+.iconDrop {
+  padding: 5px 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #fff;
+  color: black;
+}
+
+.iconDrop img {
+  width: 35px;
+}
+
+.iconDrop div {
+  width: 15px;
+  height: 15px;
+  background: url(../../../assets/images/icons/dropdown.png) no-repeat center
+    center;
+  background-size: contain;
+  cursor: pointer;
+}
+
+.instaDropList {
+  position: absolute;
+  width: 100%;
+  padding: 5px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  background: #fff;
+}
+
+.instaDropList img {
+  width: 40px;
+}
+
+.instaColorSelect {
+  width: 200px;
+  font-size: 14px;
+  font-family: monospace;
+}
+
+.instaComment {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.modalFooter {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+
+.modalPrice {
+  flex-grow: 1;
+  font-size: 20px;
+  text-align: end;
+}
+
+.modalButton {
+  padding: 10px 15px;
+  color: #ebebeb;
+  border: none;
+  background: #e24728;
+  font-family: monospace;
+  font-size: 15px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.modalButton:hover {
+  background: #d81010;
+}

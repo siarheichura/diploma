@@ -21,10 +21,10 @@
 
 .bigText {
   position: absolute;
-  top: 355px;
-  left: 100px;
+  top: -50px;
+  left: -40px;
   width: 670px;
-  font-size: 100px;
+  font-size: 70px;
   opacity: 0.03;
 }
 
