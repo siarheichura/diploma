@@ -4,9 +4,9 @@ import styles from "./RootRouter.module.css";
 
 import { MainPage } from "../components/MainPage";
 import { Portfolio } from "../components/Portfolio";
-import { StickerShopPage } from "../components/StickerShopPage";
+import { StickerShopPage } from "../components/_StickerShop/StickerShopPage";
 import { MyInfoModal } from "../components/MyInfoModal";
-import { StickerBasket } from "../components/StickerBasket";
+import { StickerBasket } from "../components/_StickerShop/StickerBasket";
 
 export function RootRouter() {
   return (
@@ -39,7 +39,6 @@ export function RootRouter() {
             >
               My Sticker Shop
             </NavLink>
-            <div className={styles.themeSwitcher}></div>
           </nav>
         </div>
 
