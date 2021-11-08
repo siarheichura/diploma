@@ -1,12 +1,12 @@
 import styles from "./StickerBasket.module.css";
 
 import { InstaResult } from "../InstaResult";
-import { useDispatch, useSelector } from "react-redux";
+import { RootStateOrAny, useDispatch, useSelector } from "react-redux";
 import { Button } from "../../shared/Button";
 import { ACTIONS } from "../../../redux/contants";
 
 export function StickerBasket() {
-  const basket = useSelector((state: any) => state.basket.basket);
+  const basket = useSelector((state: RootStateOrAny) => state.basket.basket);
   const dispatch = useDispatch();
 
   const tgBotData = {
@@ -23,7 +23,7 @@ export function StickerBasket() {
     });
   };
 
-  const deleteItem = (id: any) => {
+  const deleteItem = (id: string) => {
     dispatch({ type: ACTIONS.DELETE_STICKER, id });
   };
 

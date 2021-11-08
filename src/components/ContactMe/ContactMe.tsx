@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { ChangeEvent, useState } from "react";
 import styles from "./ContactMe.module.css";
 import validator from "validator";
 
@@ -39,14 +39,14 @@ export function ContactMe() {
     }
   };
 
-  const onInputNameChange = (event: any) => {
+  const onInputNameChange = (event: ChangeEvent<HTMLInputElement>) => {
     setInputNameValue(event.target.value);
     console.log(inputNameValue);
   };
-  const onInputEmailChange = (event: any) => {
+  const onInputEmailChange = (event: ChangeEvent<HTMLInputElement>) => {
     setInputEmailValue(event.target.value);
   };
-  const onInputMessageChange = (event: any) => {
+  const onInputMessageChange = (event: ChangeEvent<HTMLTextAreaElement>) => {
     setInputMessageValue(event.target.value);
   };
 

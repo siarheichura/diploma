@@ -8,7 +8,7 @@ import { ISticker } from "../StickerShopPage/StickerShopPage";
 import { StickerCounter } from "../../shared/StickerCounter";
 
 interface IProps {
-  toggleModal: any;
+  toggleModal: () => void;
   addStickerToBasket: (newSticker: ISticker) => void;
 }
 

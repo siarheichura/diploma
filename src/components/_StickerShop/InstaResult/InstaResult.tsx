@@ -1,9 +1,9 @@
 import styles from "./InstaResult.module.css";
 
 export interface IProps {
-  instaLogo: any;
+  instaLogo: string;
   instaNick: string;
-  size: any;
+  size: string;
 }
 
 export function InstaResult({ instaLogo, instaNick, size }: IProps) {

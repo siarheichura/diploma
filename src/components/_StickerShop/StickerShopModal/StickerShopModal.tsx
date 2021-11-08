@@ -2,7 +2,7 @@ import styles from "./StickerShopModal.module.css";
 
 export interface IProps {
   toggleModal: () => void;
-  setAllFormInvisible: any;
+  setAllFormInvisible: () => void;
   children: any;
 }
 

@@ -57,9 +57,14 @@ const mySocMedia = [
 export function SocMediaLinks() {
   return (
     <div className={styles.socMedia}>
-      {mySocMedia.map((item) => {
+      {mySocMedia.map((item, index) => {
         return (
-          <a href={item.link} target="_blank" rel="noopener noreferrer">
+          <a
+            href={item.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            key={index}
+          >
             {item.icon}
           </a>
         );

@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { ChangeEvent, useEffect, useState } from "react";
 import { StickerCounter } from "../../shared/StickerCounter";
 import { ISticker } from "../StickerShopPage/StickerShopPage";
 import styles from "./CallStickerForm.module.css";
@@ -31,22 +31,22 @@ export function CallStickerForm({ addStickerToBasket, toggleModal }: any) {
     toggleModal();
   };
 
-  const onCarBrandChange = (event: any) => {
+  const onCarBrandChange = (event: ChangeEvent<HTMLInputElement>) => {
     setCarBrand(event.target.value);
   };
-  const onPhoneNumChange = (event: any) => {
+  const onPhoneNumChange = (event: ChangeEvent<HTMLInputElement>) => {
     setPhoneNum(event.target.value);
   };
-  const onWidthChange = (event: any) => {
+  const onWidthChange = (event: ChangeEvent<HTMLInputElement>) => {
     setStickerWidth(event.target.value);
   };
-  const onHeightChange = (event: any) => {
+  const onHeightChange = (event: ChangeEvent<HTMLInputElement>) => {
     setStickerHeight(event.target.value);
   };
-  const onColorChange = (event: any) => {
+  const onColorChange = (event: ChangeEvent<HTMLSelectElement>) => {
     setColor(event.target.value);
   };
-  const onCommentChange = (event: any) => {
+  const onCommentChange = (event: ChangeEvent<HTMLInputElement>) => {
     setStickerComment(event.target.value);
   };
 

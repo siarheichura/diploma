@@ -72,7 +72,7 @@ export function StickerShopPage() {
     setYourModalVisibility(false);
   };
 
-  const addStickerToBasket = (newSticker: any) => {
+  const addStickerToBasket = (newSticker: ISticker) => {
     dispatch({ type: ACTIONS.ADD_STICKER, newSticker });
   };
 

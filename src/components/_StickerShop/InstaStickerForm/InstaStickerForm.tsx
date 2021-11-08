@@ -8,7 +8,7 @@ import { ChangeEvent, MouseEvent, useEffect, useState } from "react";
 
 interface IProps {
   addStickerToBasket: (newSticker: ISticker) => void;
-  toggleModal: any;
+  toggleModal: () => void;
 }
 
 export function InstaStickerForm({ addStickerToBasket, toggleModal }: IProps) {
