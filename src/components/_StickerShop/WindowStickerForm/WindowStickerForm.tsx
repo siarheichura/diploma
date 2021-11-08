@@ -1,4 +1,3 @@
-// import { Button } from "../shared/Button";
 import { useEffect, useState } from "react";
 import { StickerCounter } from "../../shared/StickerCounter";
 import { ISticker } from "../StickerShopPage/StickerShopPage";
@@ -13,6 +12,7 @@ export function WindowStickerForm({ addStickerToBasket, toggleModal }: any) {
 
   const onAddButtonClick = () => {
     const newSticker: ISticker = {
+      stickerName: "Window add",
       id: Math.random().toString(36).substr(2, 9),
       adText: adText,
       comment: stickerComment,
@@ -34,7 +34,6 @@ export function WindowStickerForm({ addStickerToBasket, toggleModal }: any) {
   const decrementStickerCounter = () => {
     setCounter(counter - 1);
   };
-  // const onAddButtonClick = () => {};
   return (
     <div className={styles.windowForm}>
       <h3 className={styles.title}>
@@ -78,7 +77,7 @@ export function WindowStickerForm({ addStickerToBasket, toggleModal }: any) {
           decrementStickerCounter={decrementStickerCounter}
         />
         <p> {price} BYN</p>
-        <button onClick={onAddButtonClick}> add</button>
+        <button onClick={onAddButtonClick}>Add to basket</button>
       </div>
     </div>
   );

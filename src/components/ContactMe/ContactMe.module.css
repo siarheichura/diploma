@@ -63,6 +63,7 @@ textarea {
 
 .contactMe button {
   padding: 10px 15px;
+  justify-self: end;
   font-family: monospace;
   font-size: 16px;
   font-weight: 600;
@@ -75,4 +76,33 @@ textarea {
 
 button:hover {
   background: #d81010;
+}
+
+.footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  font-family: monospace;
+}
+
+.footer div {
+  width: 50%;
+  text-align: left;
+  animation: msg 0.1s infinite;
+}
+
+@keyframes msg {
+  from {
+    transform: translateX(0px);
+  }
+
+  50% {
+    transform: translateX(3px);
+  }
+
+  to {
+    transform: translateX(0);
+  }
 }

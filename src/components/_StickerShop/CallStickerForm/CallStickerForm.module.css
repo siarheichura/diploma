@@ -53,3 +53,14 @@ option {
   font-size: 20px;
   /* align-self: start; */
 }
+
+.callForm button {
+  padding: 10px 15px;
+  color: #ebebeb;
+  border: none;
+  background: #e24728;
+  font-family: monospace;
+  font-size: 15px;
+  font-weight: 600;
+  transition: 0.3s;
+}

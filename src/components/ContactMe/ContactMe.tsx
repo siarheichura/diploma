@@ -1,10 +1,13 @@
 import { useState } from "react";
 import styles from "./ContactMe.module.css";
+import validator from "validator";
 
 export function ContactMe() {
   const [inputNameValue, setInputNameValue] = useState("");
   const [inputEmailValue, setInputEmailValue] = useState("");
   const [inputMessageValue, setInputMessageValue] = useState("");
+  const [confirmMsgVisible, setConfirmMsgVisible] = useState(false);
+  const [errorMsgVisible, setErrorMsgVisible] = useState(false);
 
   const tgBotData = {
     botToken: "2069403715:AAFZ-0LpT7i2L0sqjNOsw7ccsChvJK93_Lo",
@@ -12,15 +15,28 @@ export function ContactMe() {
   };
 
   const sendMessage = () => {
-    let { botToken, chatId } = tgBotData;
-    let message = `<b>Name:</b> ${inputNameValue}%0A<b>Email:</b> ${inputEmailValue}%0A<b>Message:</b> ${inputMessageValue}`;
-    // <b>Email:</b> <i>${inputEmailValue}</i>. %0A
-    // <b>Message:</b> <i>${inputMessageValue}</i>.`
-    let url = `https://api.telegram.org/bot${botToken}/sendMessage?chat_id=${chatId}&text=${message}&parse_mode=html`;
-    fetch(url);
-    setInputNameValue("");
-    setInputEmailValue("");
-    setInputMessageValue("");
+    if (
+      validator.isEmail(inputEmailValue) &&
+      inputNameValue &&
+      inputMessageValue
+    ) {
+      let { botToken, chatId } = tgBotData;
+      let message = `<b>Name:</b> ${inputNameValue}%0A<b>Email:</b> ${inputEmailValue}%0A<b>Message:</b> ${inputMessageValue}`;
+      let url = `https://api.telegram.org/bot${botToken}/sendMessage?chat_id=${chatId}&text=${message}&parse_mode=html`;
+      fetch(url);
+      setInputNameValue("");
+      setInputEmailValue("");
+      setInputMessageValue("");
+      setConfirmMsgVisible(true);
+      setTimeout(() => {
+        setConfirmMsgVisible(false);
+      }, 3000);
+    } else {
+      setErrorMsgVisible(true);
+      setTimeout(() => {
+        setErrorMsgVisible(false);
+      }, 2000);
+    }
   };
 
   const onInputNameChange = (event: any) => {
@@ -44,7 +60,7 @@ export function ContactMe() {
         Job offers, new projects, freelance inquiry or even a cup of coffee.
       </p>
       <label>
-        Name
+        *Name
         <input
           type="text"
           value={inputNameValue}
@@ -52,7 +68,7 @@ export function ContactMe() {
         />
       </label>
       <label>
-        E-mail
+        *E-mail
         <input
           type="text"
           value={inputEmailValue}
@@ -60,14 +76,17 @@ export function ContactMe() {
         />
       </label>
       <label>
-        Message
+        *Message
         <textarea
           value={inputMessageValue}
           onChange={onInputMessageChange}
         ></textarea>
       </label>
-
-      <button onClick={sendMessage}>Send Message</button>
+      <div className={styles.footer}>
+        <button onClick={sendMessage}>Send Message</button>
+        {confirmMsgVisible ? <div>Thanks 😙</div> : null}
+        {errorMsgVisible ? <div>Incorrect data 😠</div> : null}
+      </div>
     </div>
   );
 }

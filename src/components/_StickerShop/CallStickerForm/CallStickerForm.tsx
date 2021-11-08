@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import { StickerCounter } from "../../shared/StickerCounter";
 import { ISticker } from "../StickerShopPage/StickerShopPage";
-// import { StickerCounter } from "../../shared/StickerCounter";
 import styles from "./CallStickerForm.module.css";
 
 export function CallStickerForm({ addStickerToBasket, toggleModal }: any) {
@@ -16,6 +15,7 @@ export function CallStickerForm({ addStickerToBasket, toggleModal }: any) {
 
   const onAddButtonClick = () => {
     const newSticker: ISticker = {
+      stickerName: "Call sticker",
       id: Math.random().toString(36).substr(2, 9),
       carBrand: carBrand,
       phoneNum: phoneNum,
@@ -25,18 +25,6 @@ export function CallStickerForm({ addStickerToBasket, toggleModal }: any) {
       count: counter,
       price: price,
       color: color,
-
-      // id: string;
-      // icon?: string;
-      // nickname?: string;
-      // cardBrand?: string;
-      // phoneNum?: string;
-      // width: string;
-      // height: string;
-      // color: string;
-      // comment: string;
-      // count: number;
-      // price: number;
     };
 
     addStickerToBasket(newSticker);
@@ -124,7 +112,7 @@ export function CallStickerForm({ addStickerToBasket, toggleModal }: any) {
           decrementStickerCounter={decrementStickerCounter}
         />
         <p> {price} BYN</p>
-        <button onClick={onAddButtonClick}> add</button>
+        <button onClick={onAddButtonClick}>Add to basket</button>
       </div>
     </div>
   );

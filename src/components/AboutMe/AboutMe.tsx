@@ -14,9 +14,7 @@ export function AboutMe() {
         guy who likes making weird things with web technologies. I like to
         <span>resolve</span> design problems, <span>create</span> smart user
         interface and <span>imagine</span> useful interaction, developing rich
-        web experiences & web applications. When not working or futzing around
-        with code, I study how to escape from University. Actually
-        <span>for hire</span>.
+        web experiences & web applications. Actually <span>for hire</span>.
       </p>
       <div className={styles.aboutStack}>
         {stackSvgIcons.map((icon) => {

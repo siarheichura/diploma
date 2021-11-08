@@ -12,6 +12,7 @@ import { CallStickerForm } from "../CallStickerForm";
 import { WindowStickerForm } from "../WindowStickerForm";
 
 export interface ISticker {
+  stickerName?: string;
   id: string;
   icon?: string;
   iconId?: number;

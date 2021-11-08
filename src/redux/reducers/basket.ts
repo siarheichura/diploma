@@ -16,7 +16,6 @@ export const basket = (state = defaultState, action: AnyAction) => {
         (item: any) => item.id !== action.id
       );
       return { ...state, basket: updatedBasket };
-      // return updatedBasket;
     }
 
     default:
